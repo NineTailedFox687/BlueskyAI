@@ -76,7 +76,7 @@ if __name__ == '__main__':
     AI: 3.14159
     Bob: Thanks
     '''
-    traits = ('load', 'annoying', 'talkative', 'rough')
+    traits = ()
 
     output = summerize_chat_messages(history)
     personality = generate_personality(traits)  
