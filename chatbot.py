@@ -32,7 +32,7 @@ class AI:
         self.prompt = ChatPromptTemplate.from_template(self.template)
         self.chain = self.prompt | self.model
 
-    def chat(self, message: str) -> None:
+    def chat(self, message: str) -> str:
         history: str = chatbot_manager.convert_to_string(self.context) 
 
         if len(self.context) > self.long_mem_leng:
